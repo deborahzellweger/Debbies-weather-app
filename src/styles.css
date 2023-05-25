@@ -2,8 +2,15 @@
   margin-top: 50px;
   margin-bottom: 120px;
   max-width: 800px;
+  padding: 50px;
+}
+
+.weather-container {
+  margin-top: 50px;
+  margin-bottom: 30px;
+  max-width: 800px;
   border: 1px solid #e2e2e2;
-  box-shadow: 0 30px 40px rgba(0, 0, 0, 0.1);
+  box-shadow: 40px 0px 200px rgba(0, 0, 0, 0.1);
   padding: 50px;
 }
 
@@ -95,4 +102,13 @@ h2 {
   font-family: "Source Sans Pro", sans-serif;
   font-size: 20px;
   font-weight: 300;
+}
+
+.openSource {
+  display: inline;
+  box-sizing: border-box;
+}
+
+.openSourceLink {
+  text-decoration: underline;
 }

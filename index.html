@@ -26,70 +26,79 @@
   </head>
   <body>
     <div class="container">
-      <div class="row today">
-        <div class="col-sm-4 today">
-          <h1 class="symbol">🌤</h1>
-          <h1 class="city" id="city">London</h1>
-          <h2 class="date" id="currentDate">date</h2>
-          <span class="temp-today"
-            ><h1 class="temp" id="temp-display">10</h1>
-            <h2 class="metric">
-              <a href="#" id="c-link">°C</a>
-              |
-              <a href="#" id="f-link">°F</a>
-            </h2></span
-          >
+      <div class="weather-container">
+        <div class="row today">
+          <div class="col-sm-4 today">
+            <h1 class="symbol">🌤</h1>
+            <h1 class="city" id="city">London</h1>
+            <h2 class="date" id="currentDate">date</h2>
+            <span class="temp-today"
+              ><h1 class="temp" id="temp-display">10</h1>
+              <h2 class="metric">
+                <a href="#" id="c-link">°C</a>
+                |
+                <a href="#" id="f-link">°F</a>
+              </h2></span
+            >
+          </div>
+          <div class="col-sm-8 entercity">
+            <form>
+              <input
+                class="form-control entercity"
+                type="text"
+                id="city-input"
+                placeholder="Enter City"
+              />
+            </form>
+          </div>
         </div>
-        <div class="col-sm-8 entercity">
-          <form>
-            <input
-              class="form-control entercity"
-              type="text"
-              id="city-input"
-              placeholder="Enter City"
-            />
-          </form>
+        <div class="additionalinformation">
+          <ul>
+            <li>Percipitation: 95%</li>
+            <li>Humidity: 63%</li>
+            <li>Wind: 6mph</li>
+          </ul>
+        </div>
+        <div class="row weekday">
+          <div class="col-sm weekday">
+            <h2 class="weather-symbol">🌧</h2>
+            <h2>Monday</h2>
+            <span class="high temp">10°</span>
+            <span class="low temp">/ 6°</span>
+          </div>
+          <div class="col-sm weekday">
+            <h2 class="weather-symbol">🌦</h2>
+            <h2>Tuesday</h2>
+            <span class="high temp">12°</span>
+            <span class="low temp">/ 6°</span>
+          </div>
+          <div class="col-sm weekday">
+            <h2 class="weather-symbol">☀️</h2>
+            <h2>Wednesday</h2>
+            <span class="high temp">18°</span>
+            <span class="low temp">/ 8°</span>
+          </div>
+          <div class="col-sm weekday">
+            <h2 class="weather-symbol">🌧</h2>
+            <h2>Thursday</h2>
+            <span class="high temp">15°</span>
+            <span class="low temp">/ 9°</span>
+          </div>
+          <div class="col-sm weekday">
+            <h2 class="weather-symbol">🌧</h2>
+            <h2>Friday</h2>
+            <span class="high temp">12°</span>
+            <span class="low temp">/ 9°</span>
+          </div>
         </div>
       </div>
-      <div class="additionalinformation">
-        <ul>
-          <li>Percipitation: 95%</li>
-          <li>Humidity: 63%</li>
-          <li>Wind: 6mph</li>
-        </ul>
-      </div>
-      <div class="row weekday">
-        <div class="col-sm weekday">
-          <h2 class="weather-symbol">🌧</h2>
-          <h2>Monday</h2>
-          <span class="high temp">10°</span>
-          <span class="low temp">/ 6°</span>
-        </div>
-        <div class="col-sm weekday">
-          <h2 class="weather-symbol">🌦</h2>
-          <h2>Tuesday</h2>
-          <span class="high temp">12°</span>
-          <span class="low temp">/ 6°</span>
-        </div>
-        <div class="col-sm weekday">
-          <h2 class="weather-symbol">☀️</h2>
-          <h2>Wednesday</h2>
-          <span class="high temp">18°</span>
-          <span class="low temp">/ 8°</span>
-        </div>
-        <div class="col-sm weekday">
-          <h2 class="weather-symbol">🌧</h2>
-          <h2>Thursday</h2>
-          <span class="high temp">15°</span>
-          <span class="low temp">/ 9°</span>
-        </div>
-        <div class="col-sm weekday">
-          <h2 class="weather-symbol">🌧</h2>
-          <h2>Friday</h2>
-          <span class="high temp">12°</span>
-          <span class="low temp">/ 9°</span>
-        </div>
-      </div>
+      <p class="openSource">
+        <a
+          class="openSourceLink"
+          href="https://github.com/deborahzellweger/Debbies-weather-app"
+          >Open-Source Coded</a
+        >, by Deborah Zellweger
+      </p>
     </div>
     <script src="src/index.js"></script>
   </body>
